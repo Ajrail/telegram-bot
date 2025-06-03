@@ -29,7 +29,7 @@ async def contact_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         file.write(f"{first_name} | {user_id} | {phone_number}\n")
 
 # অ্যাপ রান করা
-app = ApplicationBuilder().token(BOT_TOKEN).build()
+app = ApplicationBuilder().token(7821218866:AAFxPSzZj_NwPworHHyUrY20Oo0THMfwLOg).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.CONTACT, contact_handler))
 
